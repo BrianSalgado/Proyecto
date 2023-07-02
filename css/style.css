@@ -6,9 +6,14 @@ header div {
     z-index: 1;
 
 }
+.navbar{
+    margin: 0px;
+    padding: 0px;
+}
 h1 {
     text-align: center;
     background-color: rgb(237, 237, 237);
+    margin: 0px;
 }
 div{
     background-color: rgb(237, 237, 237);
@@ -17,12 +22,19 @@ div{
 h2 {
     text-align: center;
     font-size: larger;
+    padding: 30px;
 }
 ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: small;
+    margin: 5px;
 }
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
 
 .caja{
     width: 350px;
@@ -37,10 +49,10 @@ ul li a {
     height: 800px;
     width: 1800px;
 }
-.productos{
+/*  productos{
     height: 400px;
-    width: 587px;
-}
+    width: 587px; */
+
 h3{
     text-align: center;
 }
@@ -98,6 +110,18 @@ main{
 div p {
     text-align: left;
 }
-main img {
-    padding: 5px;
+main img{
+    padding: 0px;
+}
+
+.btn  {
+    color:aquamarine ;
+}
+
+.productos{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    background-color: white;
 }
