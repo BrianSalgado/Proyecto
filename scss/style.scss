@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+
+// maps
+$fondos:(
+    primary: rgb(230, 224, 224),
+    secondary: rgb(202, 24, 24),
+    tertiary: aquamarine
+);
+@mixin margenes ($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+@mixin medidas ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+
+aside{
+    // variable
+    background-color: map-get($fondos, primary);
+}
+
+// header 
+header {
+    // mixin
+    @include margenes (5, 0,);
+    // padding: 0;
+    // margin: 5;   
+    div{
+        background-color: rgb(248, 244, 244);
+    }
+        p {
+            text-align: left;
+        }
+        .chat{
+            // mixin 
+            @include medidas (70px, 88px); 
+            // width: 70px;
+            // height: 88px;
+            margin-top: 100px;
+            margin-left: 1700px;
+            border: 5px double black;
+            // variable
+            background-color: map-get($fondos, tertiary);
+            position: fixed;
+            border-style: double;
+            right: 50px;
+            text-align: center;
+            box-shadow: 0 0 20px rgb(10, 6, 6);
+        } 
+        img{
+            margin-right: 430px;
+        } 
+        @media (max-width: 480px) 
+            {
+            background-color: blue;
+            border: 5px double rgb(0, 0, 0);
+            width: 80px;
+            height: 50px;   
+        }           
+}
+
+// main
+main{
+    grid-row: auto;
+    img{
+        padding: 0px;
+    }
+    // main quienes somos
+    p{
+        background-color: aquamarine;
+        box-shadow: 0 0 20px gray;
+        margin-top: 20px;
+    }
+    .quienessomos{
+        // mixin
+        @include medidas (100%, 300px);
+        // width: 100%;
+        // height: 300px;
+        
+    }
+    // main contacto
+    h2{
+        text-align: center;
+    }
+    button:hover{
+        background-color: map-get($fondos, tertiary);
+    }
+
+}
+
+// aside 
+aside{
+    margin-bottom: 20px;
+    .coleccion{
+        margin-top: 5x;
+        margin-left: 80px;
+    }
+    h2 {
+        text-align: center;
+        font-size: larger;
+        // mixin
+        @include margenes (0, 30px,);
+        // padding: 30px;
+    }
+    h3{
+        text-align: center;
+        margin-top: 35px;
+    }
+    .caja{
+        @include medidas (350px, 150px,);
+        // width: 350px;
+        // height: 150px;
+        border-style: hidden;
+        // variable
+        background-color: map-get($fondos, tertiary);
+        display: inline-block;
+        margin: 40px;
+        box-shadow: 0 0 20px gray;
+        @media (max-width: 480px) 
+            {
+            background-color: blue;
+            border: 5px double rgb(0, 0, 0);
+            }
+    }
+    // p de tshirts y pantalones 
+    p{
+        background-color: aquamarine;
+        box-shadow: 0 0 20px gray;
+        margin-top: 20px;
+    }
+
+}
+
+// footer
+footer{
+    background-color: map-get($fondos, primary);
+    form{
+    text-align: center;
+    }
+    .logos{
+        // mixin 
+        @include medidas (50px, 50px,);
+    // width: 50px;
+    // height: 50px;
+    margin: 10px;
+    }
+    h3{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+}
+
+
+
+ul {
+    margin: 0px;
+    li{ 
+        margin: 0px;
+        a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: small;
+    margin: 5px;
+        }
+    }
+}
+
+.ropa{
+    @include medidas (1800px, 800px,);
+    // height: 800px;
+    // width: 1800px;
+}
+
+.quienessomos{
+    @include medidas (100%, 300px,);
+    // width: 100%;
+    // height: 300px;
+    
+}
+.p1{
+    color: rgb(237, 237, 237);
+    text-align: right;
+
+
+}
+section{
+    text-align: center;
+    font-size: larger;
+    block-size: 100px;
+    margin-block-start: 100px;
+}
+
+
+@media (max-width: 480px) {
+    .quienessomos{
+        width: 100%;
+        height: 50%;
+        
+    }
+}
+
+.btn  {
+    color:aquamarine ;
+}
+@media (max-width: 480px) {
+    .btn{
+        background-color: blue; 
+        
+    }
+}
+
+
+
+@media (max-width:480px) {
+    * {
+        font-size: 10px;
+    }
+}
+@media (max-width:480px) {
+    nav {
+        width: 100%;
+        height: 100%;
+    }
+}
+

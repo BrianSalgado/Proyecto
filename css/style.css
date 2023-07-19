@@ -1,171 +1,184 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+}
+
+aside {
+  background-color: rgb(230, 224, 224);
+}
+
+header {
+  margin: 5;
+  padding: 0;
 }
 header div {
-    width: 100%;
-    z-index: 1;
-
+  background-color: rgb(248, 244, 244);
 }
-
-.navbar{
-    margin: 0px;
-    padding: 0px;
+header p {
+  text-align: left;
 }
-
-h1 {
-    text-align: center;
-    background-color: rgb(237, 237, 237);
-    margin: 0px;
+header .chat {
+  width: 70px;
+  height: 88px;
+  margin-top: 100px;
+  margin-left: 1700px;
+  border: 5px double black;
+  background-color: aquamarine;
+  position: fixed;
+  border-style: double;
+  right: 50px;
+  text-align: center;
+  box-shadow: 0 0 20px rgb(10, 6, 6);
+}
+header img {
+  margin-right: 430px;
 }
 @media (max-width: 480px) {
-    h1{
-        background-color: blue;
-        font-size: 15px; 
-    }
+  header {
+    background-color: blue;
+    border: 5px double rgb(0, 0, 0);
+    width: 80px;
+    height: 50px;
+  }
 }
 
-
-
-div{
-    background-color: rgb(237, 237, 237);
-
+main {
+  grid-row: auto;
 }
-h2 {
-    text-align: center;
-    font-size: larger;
-    padding: 30px;
+main img {
+  padding: 0px;
+}
+main p {
+  background-color: aquamarine;
+  box-shadow: 0 0 20px gray;
+  margin-top: 20px;
+}
+main .quienessomos {
+  width: 100%;
+  height: 300px;
+}
+main h2 {
+  text-align: center;
+}
+main button:hover {
+  background-color: aquamarine;
+}
+
+aside {
+  margin-bottom: 20px;
+}
+aside .coleccion {
+  margin-top: 5x;
+  margin-left: 80px;
+}
+aside h2 {
+  text-align: center;
+  font-size: larger;
+  margin: 0;
+  padding: 30px;
+}
+aside h3 {
+  text-align: center;
+  margin-top: 35px;
+}
+aside .caja {
+  width: 350px;
+  height: 150px;
+  border-style: hidden;
+  background-color: aquamarine;
+  display: inline-block;
+  margin: 40px;
+  box-shadow: 0 0 20px gray;
+}
+@media (max-width: 480px) {
+  aside .caja {
+    background-color: blue;
+    border: 5px double rgb(0, 0, 0);
+  }
+}
+aside p {
+  background-color: aquamarine;
+  box-shadow: 0 0 20px gray;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: rgb(230, 224, 224);
+}
+footer form {
+  text-align: center;
+}
+footer .logos {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+footer h3 {
+  text-align: center;
+}
+footer h4 {
+  text-align: center;
+}
+
+ul {
+  margin: 0px;
+}
+ul li {
+  margin: 0px;
 }
 ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: small;
-    margin: 5px;
-}
-nav ul{
-    display: flex;
-    list-style-type: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: small;
+  margin: 5px;
 }
 
+.ropa {
+  width: 1800px;
+  height: 800px;
+}
 
-.caja{
-    width: 350px;
-    height: 150px;
-    border: 5px double black;
-    background-color: aquamarine;
-    display: inline-block;
-    margin: 40px;
-    box-shadow: 0 0 20px gray;
+.quienessomos {
+  width: 100%;
+  height: 300px;
+}
+
+.p1 {
+  color: rgb(237, 237, 237);
+  text-align: right;
+}
+
+section {
+  text-align: center;
+  font-size: larger;
+  block-size: 100px;
+  margin-block-start: 100px;
+}
+
+@media (max-width: 480px) {
+  .quienessomos {
+    width: 100%;
+    height: 50%;
+  }
+}
+.btn {
+  color: aquamarine;
+}
+
+@media (max-width: 480px) {
+  .btn {
+    background-color: blue;
+  }
 }
 @media (max-width: 480px) {
-    .caja {
-        background-color: blue;
-        border: 5px double rgb(0, 0, 0);
-
-    }
-}
-.ropa{
-    height: 800px;
-    width: 1800px;
-}
-/*  productos{
-    height: 400px;
-    width: 587px; */
-
-h3{
-    text-align: center;
-}
-footer{
-    background-color: rgb(237, 237, 237);
-}
-form{
-    text-align: center;
-}
-.logos{
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-
-}
-.quienessomos{
-    width: 1500px;
-    height: 300px;
-    
-}
-.p1{
-    color: rgb(237, 237, 237);
-    text-align: right;
-
-
-}
-section{
-    text-align: center;
-    font-size: larger;
-    block-size: 100px;
-    margin-block-start: 100px;
-}
-.chat{
-    width: 70px;
-    height: 88px;
-    margin-top: 100px;
-    margin-left: 1700px;
-    border: 5px double black;
-    background-color: aquamarine;
-    position: fixed;
-    border-style: double;
-    right: 50px;
-
-    text-align: center;
-    
+  * {
+    font-size: 10px;
+  }
 }
 @media (max-width: 480px) {
-    .chat {
-        background-color: blue;
-        border: 5px double rgb(0, 0, 0);   
-    }
+  nav {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-
-h4{
-    text-align: center;
-}
-
-main{
-    grid-row: auto;
-}
-
-div p {
-    text-align: left;
-}
-main img{
-    padding: 0px;
-}
-@media (max-width: 480px) {
-    .quienessomos{
-        width: 100%;
-        height: 50%;
-        
-    }
-}
-
-.btn  {
-    color:aquamarine ;
-}
-@media (max-width: 480px) {
-    .btn{
-        background-color: blue; 
-        
-    }
-}
-
-.productos{
-    margin: 0px;
-    padding: 0px;
-}
-.container{
-    background-color: white;
-}
-@media (max-width:480px) {
-    * {
-        font-size: 10px;
-    }
-}
+/*# sourceMappingURL=style.css.map */

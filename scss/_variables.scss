@@ -1,0 +1,9 @@
+
+$fondos:(
+    primary: grey
+    secondary: white
+    tertiary: black 
+);
+main{
+    background-color: map-get($fondos, tertiary);
+}
