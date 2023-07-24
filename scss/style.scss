@@ -67,12 +67,10 @@ header {
             img{
             margin-right: 430px;
             }
-        @media (max-width: 480px)
+            // MEDIAS QUERY - MOVIL 
+        @media (max-width: 600px)
             {
             background-color: blue;
-            border: 5px double rgb(0, 0, 0);
-            width: 80px;
-            height: 50px;
         }
 }
 
@@ -98,7 +96,7 @@ main{
         text-align: center;
     }
     button:hover{
-        background-color: map-get($fondos, tertiary);
+    background-color: map-get($fondos, tertiary);
     }
 }
 
@@ -134,7 +132,8 @@ aside{
             transform: scale(1.2);
             cursor: pointer;
         }
-        @media (max-width: 480px)
+        // MEDIAS QUERY - MOVIL 
+        @media (max-width: 600px)
             {
             background-color: blue;
             border: 5px double rgb(0, 0, 0);

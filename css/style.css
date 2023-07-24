@@ -43,12 +43,9 @@ header .chat {
 header img {
   margin-right: 430px;
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   header {
     background-color: blue;
-    border: 5px double rgb(0, 0, 0);
-    width: 80px;
-    height: 50px;
   }
 }
 
@@ -105,7 +102,7 @@ aside .caja :hover {
   transform: scale(1.2);
   cursor: pointer;
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   aside .caja {
     background-color: blue;
     border: 5px double rgb(0, 0, 0);
